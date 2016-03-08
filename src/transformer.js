@@ -51,7 +51,7 @@ class Transformer extends ClassTransformer {
           // named class with only a constructor
           // run方法中仅有这里做了修改
           if (body.length === 1) {
-            body[0].id.name = this.scope.generateUidIdentifier(body[0].id.name);
+            body[0].id = this.scope.generateUidIdentifier(body[0].id.name);
             return t.toExpression(body[0]);
           }
         }
