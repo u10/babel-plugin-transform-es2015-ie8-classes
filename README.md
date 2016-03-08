@@ -4,6 +4,24 @@ ES2015 classes在转换中，如果没有对象方法，在转换时，会生成
 
 该插件重写了部分转换代码，在只有一个构造函数时，将命名函数表达式的名称替换为一个新的名字。
 
+## 使用
+
+```
+npm install babel-plugin-transform-es2015-ie8-classes
+```
+
+在 `.babelrc` 或 `package.json` 的 `babel` 字段中配置：
+
+```
+{
+    "presets": [ "es2015" ],
+    "plugins": [ "transform-es2015-ie8-classes" ]
+}
+```
+
+**因IE中不支持 `defineProperties`，需要使用 [Babel 6: loose mode](http://www.2ality.com/2015/12/babel6-loose-mode.html)**
+
+
 ## Babel 原生转换类定义
 
 With `babel-plugin-transform-es2015-classes`:
