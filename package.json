@@ -1,6 +1,6 @@
 {
   "name": "babel-plugin-transform-es2015-ie8-classes",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Babel Transform ES2015 Class Adapted IE8+",
   "main": "lib/index.js",
   "scripts": {
