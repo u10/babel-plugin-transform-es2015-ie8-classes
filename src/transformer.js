@@ -63,3 +63,5 @@ class Transformer extends ClassTransformer {
         return t.callExpression(container, closureArgs);
     }
 }
+
+module.exports = Transformer;
