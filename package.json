@@ -5,7 +5,7 @@
   "main": "lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prepublish": "rm -rf ./lib && babel ./src --out-dir ./lib"
+    "build": "rm -rf ./lib && babel ./src --out-dir ./lib"
   },
   "repository": {
     "type": "git",
