@@ -8,7 +8,7 @@ import LooseTransformer from "babel-plugin-transform-es2015-classes/lib/loose";
 import VanillaTransformer from "./transformer";
 import nameFunction from "babel-plugin-transform-es2015-classes/node_modules/babel-helper-function-name";
 
-export default function ({ types: t }) {
+function ie8Plugin ({ types: t }) {
   // todo: investigate traversal requeueing
   let VISITED = Symbol();
 
@@ -53,3 +53,5 @@ export default function ({ types: t }) {
     }
   };
 }
+
+module.exports = ie8Plugin;
