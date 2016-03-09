@@ -7,19 +7,35 @@ ES2015 classes在转换中，如果没有对象方法，在转换时，会生成
 ## 使用
 
 1. 安装
-    ```
+
+    ```sh
     npm install babel-plugin-transform-es2015-ie8-classes
     ```
+    
 2. 配置
   可以按babel中的介绍直接使用该插件，但是在与presets配合时可能会出问题。如下的配置转换时将会报语法错误：
-    ```
+
+    ```json
     {
         "presets": [ "es2015" ],
         "plugins": [ "transform-es2015-ie8-classes" ]
     }
     ```
 
-**因IE中不支持 `defineProperties`，需要使用 [Babel 6: loose mode](http://www.2ality.com/2015/12/babel6-loose-mode.html)**
+*因IE中不支持 `defineProperties`，需要使用 [Babel 6: loose mode](http://www.2ality.com/2015/12/babel6-loose-mode.html)*
+
+**推荐使用 [babel-preset-es2015-loose-ie8](https://github.com/calefy/babel-preset-es2015-loose-ie8) 替换原es2015包**
+
+
+```sh
+npm install babel-preset-es2015-loose-ie8
+```
+
+```json
+{
+    "presets": [ "es2015-loose-ie8" ]
+}
+```
 
 
 ## Babel 原生转换类定义
