@@ -4,7 +4,7 @@
  * @author calefy<clfsw0201@gmail.com>
  * @since 2016-03-08
  */
-import LooseTransformer from "babel-plugin-transform-es2015-classes/lib/loose";
+import LooseTransformer from "./loose";
 import VanillaTransformer from "./vanilla";
 import nameFunction from "babel-plugin-transform-es2015-classes/node_modules/babel-helper-function-name";
 
