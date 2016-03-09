@@ -5,7 +5,7 @@
  * @since 2016-03-08
  */
 import LooseTransformer from "babel-plugin-transform-es2015-classes/lib/loose";
-import VanillaTransformer from "./transformer";
+import VanillaTransformer from "./vanilla";
 import nameFunction from "babel-plugin-transform-es2015-classes/node_modules/babel-helper-function-name";
 
 function ie8Plugin ({ types: t }) {
