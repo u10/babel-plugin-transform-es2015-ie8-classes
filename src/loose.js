@@ -1,9 +1,9 @@
 /**
  * copy from es2015-classes
  */
-import nameFunction from "babel-plugin-transform-es2015-classes/node_modules/babel-helper-function-name";
+import nameFunction from "babel-helper-function-name";
 import VanillaTransformer from "./vanilla";
-import * as t from 'babel-plugin-transform-es2015-classes/node_modules/babel-types';
+import * as t from 'babel-types';
 
 class LooseClassTransformer extends VanillaTransformer {
   constructor() {

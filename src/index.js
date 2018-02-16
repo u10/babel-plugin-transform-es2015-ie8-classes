@@ -6,7 +6,7 @@
  */
 import LooseTransformer from "./loose";
 import VanillaTransformer from "./vanilla";
-import nameFunction from "babel-plugin-transform-es2015-classes/node_modules/babel-helper-function-name";
+import nameFunction from "babel-helper-function-name";
 
 function ie8Plugin ({ types: t }) {
   // todo: investigate traversal requeueing

@@ -3,7 +3,7 @@
  * @autor calefy<clfsw0201@gmail.com>
  * @since 2016-03-08
  */
-import * as t from 'babel-plugin-transform-es2015-classes/node_modules/babel-types';
+import * as t from 'babel-types';
 import ClassTransformer from 'babel-plugin-transform-es2015-classes/lib/vanilla';
 
 class Transformer extends ClassTransformer {
